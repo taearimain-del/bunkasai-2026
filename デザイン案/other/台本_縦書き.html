@@ -83,10 +83,10 @@ td.cast-slot-cell { min-width: 70px; background: #fafaf6; border-bottom: 2px sol
 .char-legend .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 3px; vertical-align: middle; }
 p.cast-note { font-size: 9pt; color: #999; margin: 4px 0; font-style: italic; }
 
-/* ===== スタッフ注意書き ===== */
-.staff-notes { background: #f6f6f4; border: 1px solid #d0ccc4; border-radius: 3px; padding: 8px 12px; margin: 0 0 8px 10px; }
-.staff-notes ul { list-style: none; padding: 0; margin: 0; }
-.staff-notes li { font-size: 9.5pt; color: #333; padding: 2px 0; line-height: 1.8; }
+/* ===== スタッフ注意書き（縦書き強制）===== */
+.staff-notes { writing-mode: vertical-rl; background: #f6f6f4; border: 1px solid #d0ccc4; border-radius: 3px; padding: 8px 12px; margin: 0 0 8px 10px; }
+.staff-notes ul { writing-mode: vertical-rl; list-style: none; padding: 0; margin: 0; }
+.staff-notes li { writing-mode: vertical-rl; font-size: 9.5pt; color: #333; padding: 2px 0; line-height: 1.8; }
 .staff-notes li::before { content: '▸'; color: #888; margin-right: 6px; font-size: 8.5pt; }
 
 /* ===== セリフ・ト書き ===== */
@@ -347,8 +347,7 @@ p.kantoku-cue { background: #eaecf4; border: 1px solid #3848b0; border-left: 4px
 <p class="stage-direction">（暗転 ― 夏アナはこの暗転中に舞台袖で旅用衣装に早替えすること。ACT4開幕までに必ず済ませる。）</p>
 <p class="cue daidogu-cue">🎨 <strong>大道具:</strong> 暗転中に白・水色パネルを撤去し、ACT4（納屋のある野外）の配置へ変更。ドアフレームをACT4（納屋の扉）の位置に設置。</p>
 <p class="cue shodogu-cue">📦 <strong>小道具:</strong> 暗転中にロープ・金づち・人参を夏アナが手に取れる位置にセット。</p>
-<p class="cue isho-cue">👗 <strong>衣装:</strong> 暗転中に夏アナが旅用衣装に早替え（舞台袖）。着替え完了を舞台監督に知らせる。</p>
-<p class="cue kantoku-cue">🎬 <strong>舞台監督:</strong> 大道具・小道具の転換完了・衣装係からの夏アナの着替え完了報告を両方確認してから照明・役者入場の合図を出す。</p>
+<p class="cue kantoku-cue">🎬 <strong>舞台監督:</strong> 大道具・小道具の転換完了・夏アナの旅用衣装への着替え完了（舞台袖）を確認してから照明・役者入場の合図を出す。</p>
 <p class="cue time-cue">⏱ ここまで約16〜18分</p>
 <hr>
 <div class="act-header"><div class="act-title">ACT 4　クリストフ・オラフとの旅</div>
